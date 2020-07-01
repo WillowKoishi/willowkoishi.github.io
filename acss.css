@@ -1,5 +1,7 @@
 BODY
 {
+			overflow-x:hidden;
+			z-index: 1;
     PADDING-RIGHT: 0px;
     PADDING-LEFT: 0px;
     FONT-SIZE: 70%;
@@ -486,8 +488,71 @@ TABLE.bannertitle TD
     PADDING-TOP: 0px;
     BORDER-BOTTOM: #999999 1px solid
 }
-TD.button
-{
-    WIDTH: 14px;
-    CURSOR: hand
-}
+ * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            max-width: 1920px;
+			overflow-x:hidden;
+			z-index: 1;
+        }
+        
+        #btn {
+            position: absolute;
+            top: 22%;
+            left: 298px;
+            height: 75px;
+            border: 0;
+            border-left: 1px solid rgb(23, 32, 43, 0.2);
+            background: #01A05E;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .box {
+            float: left;
+            position: relative;
+            left: 0;
+            height: 1000px;
+            width: 300px;
+            margin-left: 0;
+            display: block;
+            background-color: #01A05E;
+            -moz-transition: margin-left 0.5s;
+            transition: margin-left 0.5s;
+			
+        }
+        
+        aside ul li {
+            height: 40px;
+            line-height: 40px;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        aside ul li a {
+            width: 100%;
+            height: 100%;
+            text-decoration-line: none;
+            color: #fff;
+            display: block;
+        }
+        
+        aside ul li a:hover {
+            background: #d3d;
+        }
+        
+        section {
+            width: 100%;
+            height: 100%;
+            background: #01A05E;
+            height: 1000px;
+        }
+        
+        section h1 {
+            text-align: center;
+            border-bottom: 1px solid #fff;

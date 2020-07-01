@@ -17,6 +17,22 @@ content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale
 <DIV id=titlerow style="background:#01A05E;HEIGHT: 68px">
 <H1 class=dtH1><FONT color=#ffffff size=7 
 face="微软雅黑 Light">欢迎！</FONT></H1></DIV></DIV>
+<aside class="box" id="test" style="box-shadow:0 0 1px #000 ;">
+        <button id="btn">三</button>
+        <ul>
+            <li>
+                <h3>ZZES</h3>
+            </li>
+            <li><a href="#">MENU TITLE 1</a></li>
+            <li><a href="#">MENU TITLE 2</a></li>
+            <li><a href="#">MENU TITLE 3</a></li>
+            <li><a href="#">MENU TITLE 4</a></li>
+            <li><a href="#">MENU TITLE 5</a></li>
+            <li><a href="#">MENU TITLE 6</a></li>
+            <li><a href="#">MENU TITLE 7</a></li>
+        </ul>
+    </aside>
+<div>
 <DIV id=nstext><FONT size=4>这里是柳树怪的服务器二期项目</FONT></DIV>
 <DIV><FONT 
 size=4>这是一个含有东方Project元素的建筑服务器（当然，并不主要是东方题材），我们的目标是建成一个现代化的大城市，因为懒得想名字<IMG 
@@ -32,4 +48,17 @@ face=微软雅黑><EM>话说回来，幻想乡是外界遗忘的事物聚集的�
 <DIV class=footer>
 <P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy; 2020 <A 
 href="https://skin.thcraft.cn" target=_blank>柳树怪的服务器委员会</A>. All Rights 
-Reserved. </P></DIV></BODY></HTML>
+Reserved. </P></DIV></div>
+<script>
+		var box = document.getElementById("test")
+        var btn = document.getElementById("btn")
+      box.style['margin-left'] = -300 + "px"
+        btn.onclick = function() {
+            if (box.offsetLeft == 0) {
+                box.style['margin-left'] = -300 + "px"
+            } else {
+                box.style['margin-left'] = 0 + "px"
+            }
+        }
+</script>
+</BODY></HTML>
